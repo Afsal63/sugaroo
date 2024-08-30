@@ -7114,12 +7114,42 @@ border-radius: 20px;
   float: right;
   max-width: 570px;
 }
+.whatsapp-icon{
+  position: fixed;
+  top: 80%;
+  left: 94%;
+  bottom: 11%;
+  z-index: 9999;
+  height: 55px;
+  width: 55px;
+  background: #5c5cc1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 @media (max-width: 767px) {
   .ps-checkout__billing .form-group label, .ps-checkout__billing .form-group .form-control {
     float: none;
     width: 100%;
     max-width: 100%;
+  }
+  .whatsapp-icon{
+    position: fixed;
+    top: 80%;
+    left: 82%;
+    bottom: 11%;
+    z-index: 9999;
+    height: 55px;
+    width: 55px;
+    background: #5c5cc1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
   }
 }
 
