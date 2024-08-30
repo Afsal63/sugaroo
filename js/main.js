@@ -179,6 +179,7 @@
             }
         });
         $('.page-wrap').on('click', function(e) {
+         
             sidebar.removeClass('active');
             $('.page-wrap, .header').removeClass('menu-sidebar--active');
             toggleBtn.removeClass('menu-toggle--active');

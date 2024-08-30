@@ -3794,6 +3794,36 @@ textarea.form-control {
   z-index: 10;
 }
 
+.offr-image1{
+  width: 550px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.offr-image3{
+width: 555px;
+height: 235px;
+object-fit: cover;
+border-radius: 20px;
+}
+.offr-image2{
+  width: 262px;
+  height: 232px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .offr-image1 {
+    width: 100%;
+  }
+  .offr-image2 {
+    width: 100%;
+  }
+  .offr-image3{
+    width: 100%;
+  }
+}
+
 .ps-offer img {
   width: 100%;
   -webkit-transition: all 0.4s ease;
@@ -3850,7 +3880,7 @@ textarea.form-control {
 }
 
 .ps-post .ps-post__header {
-  padding: 20px 0 30px;
+  padding: 20px 0 0px;
 }
 
 .ps-post .ps-post__title {
@@ -5174,7 +5204,7 @@ textarea.form-control {
     display: none;
   }
   .ps-section .ps-section__top {
-    font-size: 14px;
+    font-size: 25px;
   }
   .ps-section .ps-section__title {
     font-size: 30px;
@@ -5475,7 +5505,7 @@ textarea.form-control {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 0;
-  width: calc((100% - 1170px) / 2 + 285px);
+  /* width: calc((100% - 1170px) / 2 + 285px); */
   height: 100%;
   z-index: 1;
   background-color: #f5f3f0;
@@ -7860,7 +7890,7 @@ textarea.form-control {
     position: relative;
     display: inline-block;
     top: 0;
-    width: 60px;
+    width: 90px;
     margin: 0;
   }
   .header .navigation {
