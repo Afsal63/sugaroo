@@ -20,6 +20,44 @@
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     }
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.banner-slide');
+const totalSlides = slides.length;
+const bannerContent = document.querySelector('.banner-content');
+
+console.log(totalSlides, "check total slides");
+
+function updateSlidePosition() {
+  bannerContent.style.transition = 'transform 1s ease-in-out';
+  bannerContent.style.transform = `translateX(-${currentSlide * 50}%)`;
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  updateSlidePosition();
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  updateSlidePosition();
+}
+
+// Event listeners for navigation buttons
+document.querySelector('.next-button').addEventListener('click', nextSlide);
+document.querySelector('.prev-button').addEventListener('click', prevSlide);
+
+// Auto-Scroll Functionality
+let autoScroll = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+// Pause auto-scroll on hover
+document.querySelector('.banner-wrapper').addEventListener('mouseover', () => {
+  clearInterval(autoScroll);
+});
+
+// Resume auto-scroll when not hovering
+document.querySelector('.banner-wrapper').addEventListener('mouseout', () => {
+  autoScroll = setInterval(nextSlide, 5000);
+});
 
     function masonry() {
         var masonryTrigger = $('.ps-masonry');
