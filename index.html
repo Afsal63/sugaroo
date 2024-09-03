@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+   
     <link href="favicon.png" rel="icon" />
     <meta name="author" content="#{author}" />
     <meta
@@ -31,6 +32,7 @@
       rel="stylesheet"
       href="plugins/font-awesome/css/font-awesome.min.css"
     />
+    
     <link
       rel="stylesheet"
       href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css"
@@ -66,11 +68,16 @@
     <link rel="stylesheet" href="plugins/revolution/css/settings.css" />
     <link rel="stylesheet" href="plugins/revolution/css/layers.css" />
     <link rel="stylesheet" href="plugins/revolution/css/navigation.css" />
+    <link href="https://fonts.cdnfonts.com/css/andhyta" rel="stylesheet">
     <!-- Custom-->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/andhyta');
+    </style>
   </head>
 
   <body class="page-init">
+    
     <div class="header--sidebar"></div>
     <header class="header" data-responsive="1199">
       <nav class="navigation">
@@ -104,23 +111,27 @@
     <div class="loader"></div>
     <div class="page-wrap">
       <div class="ps-banner--home-1">
-        <div class="banner-wrapper">
-          <div class="banner-content">
-            <div class="banner-slide">
-              <img src="images/banner/banner2.jpg" alt="Banner 2" />
-              <div class="banner-text">We Implement Sweet Dreams</div>
+    
+      
+            <div style="background-image: url('images/banner/bannerBg.jpg');" class="banner-content">
+              <div class="banner-bg-wrapper">
+                <div style="width: 50%;">
+                  <p style="font-family: 'Andhyta', sans-serif;" class="banner-text">Your Sweet Escape Starts Here.</p>
+                </div>
+                <div style="width: 50%;">
+                  <img class="banner-img" style="width: 100%; height: 100%;" src="./images/banner/cakepng.png" alt="">
+                </div>
+              </div>
+         
             </div>
 
-            <div class="banner-slide">
-              <img src="images/banner/banner13.jpg" alt="Banner 13" />
-              <div class="banner-text">A little bliss in every bite</div>
-            </div>
-          </div>
+           
+       
 
           <!-- Navigation Buttons -->
-          <button class="nav-button prev-button">❮</button>
-          <button class="nav-button next-button">❯</button>
-        </div>
+          <!-- <button class="nav-button prev-button">❮</button>
+          <button class="nav-button next-button">❯</button> -->
+
       </div>
 
       <section class="ps-section ps-section--best-seller pt-40 pb-100">
@@ -774,6 +785,7 @@
     ></script>
     <!-- Custom scripts-->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
   </body>
 
   <!-- Mirrored from nouthemes.net/html/bakery/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Aug 2024 09:26:17 GMT -->
