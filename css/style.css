@@ -1286,11 +1286,18 @@ ol {
 .banner-bg-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+.banner-text-wrapper{
+  width: 50%;
+}
+.banner-img-wrapper{
+  width: 50%;
 }
 
 .banner-text {
+
   text-transform: capitalize;
   font-size: 60px;
   color: rgb(247, 245, 245);
@@ -1312,8 +1319,15 @@ ol {
     flex-direction: column;
     justify-content: center;
   }
+  .banner-img-wrapper{
+  
+    width: 100%;
+  }
+  .banner-text-wrapper{
+    width: 100%;
+  }
   .banner-text{
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
@@ -7386,6 +7400,26 @@ button.ps-btn--fullwidth {
   background-color: #f5f3f0;
 }
 
+.success-message {
+  display: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.success-message-text{
+  font-size: 17px;
+  color: green;
+}
+
+.success-message.show {
+  opacity: 1;
+}
+
 .ps-checkout__order h3 {
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
@@ -8304,11 +8338,11 @@ button.ps-btn--fullwidth {
 }
 
 .header--2 .menu > li > a:hover {
-  color: #fff;
+  color: #5c5cc1;
 }
 
 .header--2 .menu > li.current > a {
-  color: #fff;
+  color: #5c5cc1;
 }
 
 @media (max-width: 1199px) {
@@ -8379,7 +8413,7 @@ button.ps-btn--fullwidth {
 }
 
 .navigation--sticky .navigation {
-  background-color:#5c5cc1;
+  background-color:#fff;
 }
 
 .navigation--sticky .ps-logo {
@@ -8397,7 +8431,7 @@ button.ps-btn--fullwidth {
 }
 
 .navigation--sticky .menu > li > a {
-  color: #fff;
+  color: #000;
 }
 
 .navigation--sticky.header--2 .ps-logo {
